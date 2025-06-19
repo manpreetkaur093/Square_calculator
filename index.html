@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manpreet Kaur</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+    <script defer src="js/darkmodetoggle.js"></script>
+</head>
+<body>
+
+    
+    <header>
+        <nav class="navbar">
+            <div class="left-links">
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">HTML5</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+            </div>
+            <div class="right-buttons">
+                <button id="dark" data-bs-theme-value="dark" onclick="setDarkMode()">Dark</button>
+                <button id="light" data-bs-theme-value="light" onclick="setLightMode()">Light</button>
+                <button>Contact Me</button>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        
+        <div class="row">
+            <div class="col-1-3">
+                <p>Square calcularor using clouser</p>
+                <p>result = base <sup>2</sup></p>
+
+                <p>5 <sup>2</sup> = 25</p>
+            </div>
+            <div class="col-2-3">
+                <input type="number" id="numberInput" style="font-size: 2rem; width: 100%;" placeholder="Enter a number">
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-1-3" style="text-align: right;">
+                <button onclick="calculateSquare()">Enter</button>
+            </div>
+            <div class="col-2-3">
+                <div id="resultScreen" style="background-color: #332703; color: white; padding: 1rem; min-height: 2rem;"></div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2025 square calculator</p>
+    </footer>
+
+</body>
+</html>
